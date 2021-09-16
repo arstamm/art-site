@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content">
+      <header>
+          <div class="logo-box">
+            <img src="images/logo.png" alt="logo">
+          </div>
+          <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page-one.html">Challenge Page</a></li>
+                <li><a href="page-two.html">About Me</a></li>
+              </ul>
+          </nav>
+          <div class="header-line"></div>
+      </header>
+      <main>
+        <div class="challenge-grid">
+          <h1 class="challenge-headline-1">We Challenge <span>You</span> to</h1>
+          <h1 class="challenge-title">Create</h1>
+          <img class="challenge-img-1" src="images/paint-buckets-3.jpg" alt="paint buckets">   
+          <p class="challenge-paragraph-1">Looking for inspiration for your next big art project? Here, you will find a list of ideas submitted by others to help get your brain going. If you are looking for inspiration, this is especially the right place for you. We will challenge you to create something spectacular!</p>
+          <p class="challenge-paragraph-2">Also, have you ever wanted to dare someone to create something? Now is your chance! In addition to receiving inspiration, the Challenge Page is a place for artists to give inspiration as well. For those of you with cool ideas that you would like to share with others, submit them in the provided form.</p>
+          <form class="challenge-form" action="/my-handling-form-page" method="post">
+            <p>Submit Your Ideas Here</p>
+            <ul>
+              <li>
+                <input type="text" id="name" name="user_name" placeholder="Name">
+              </li>
+              <li>
+                <input type="email" id="mail" name="user_email" placeholder="E-mail">
+              </li>
+              <li>
+                <textarea id="idea" name="user_idea" placeholder="This is my cool art idea . . ."></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
+          </form>
+          <h2 class="challenge-headline-2">Looking for inspiration?</h2>
+          <h2 class="challenge-headline-2b">Check out the list below!</h2>
+          <ul class="challenge-list">
+            <li>Create an outdoor scene using nothing but paint brushes.</li>
+            <li>Visit a random park around where you live, and have someone else scribble a line on a piece of paper for you. Create a drawing out of the scribble that the other person created.</li>
+            <li>How do you feel right now? Create an art piece incorporating your favorite color or any other color you prefer.</li>
+          </ul>
+          <img class="challenge-img-2" src="images/notebook.jpg" alt="Notebook with paint and brushes">
+        </div>    
+      </main>
+      <footer>
+        <div class="footer-line"></div>
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="https://www.pinterest.com/"  target="_blank"><img src="images/pinterest.png" alt="Pintrest"></a>
+        </div>
+        <p>&copy; 2021 Medium - Andrew Stamm - WDD 130-13 </p>
+        <a href="site-plan.html" target="_blank">Site Plan</a>
+      </footer>
+    </div>
+  </body>
+</html>

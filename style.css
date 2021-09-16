@@ -1,0 +1,444 @@
+/* Art Site Styles */
+
+/* Fonts */
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*
+font-family: 'Arizonia', cursive;
+font-family: 'Over the Rainbow', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* General Styles */
+body {
+  background-color: #1b2773;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #e7a932;
+}
+
+#content {
+  margin: 50px auto 100px auto;
+  max-width: 900px;
+}
+
+h1, h2{
+  font-family: "Over the Rainbow", cursive;
+}
+
+p, li {
+  color: #faebd7;
+}
+
+a {
+  text-decoration: none;
+  color: #e7a932;
+}
+
+a:hover {
+  color: #d64727;
+}
+
+.header-line, .footer-line {
+  height: 5px;
+  background-color: #d64727;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.home-title, .challenge-title {
+    font-family: 'Arizonia', cursive;
+    font-size: 8em;
+    margin: 0;
+    margin-top: -30px;
+}
+  
+/* Header Styles and Grid */
+header{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  margin-bottom: 0;
+}
+
+.logo-box {
+  grid-area: 1/1/4/2;
+  align-self: top;
+}
+
+.logo-box img {
+  width: 120px;
+  
+}
+
+nav {
+  align-items: top;
+}
+
+nav ul {
+  list-style: none; /* removes the bullets! */
+  margin: auto;
+  display: flex;
+   
+}
+
+nav ul li {
+  padding-right: 2.5em;
+}
+
+nav a{
+  font-family: "Over the Rainbow", cursive;
+  font-size: 1.2em;
+  
+}
+
+nav a:hover {
+  color: #d64727;
+  background-color: #e7a932;
+}
+
+.header-line {
+  grid-area: 2/2/3/4;
+}
+
+/* Footer Styles and Grid */
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+footer p {
+  grid-area: 2/1/3/2;
+  justify-self: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+footer a {
+  justify-self: center;  
+}
+
+.social {
+  justify-self: right;
+  grid-area: 1/2/4/3;
+  max-width: 370px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 20px);
+  grid-column-gap: 35px;
+}
+
+.social a:nth-of-type(2) {
+  grid-area: 3/2;
+}
+
+.social a:nth-of-type(3) {
+  grid-area: 2/3;
+}
+
+.social a:nth-of-type(4) {
+  grid-area: 4/4;
+}
+
+/* Index Styles and Grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 30px;
+}
+
+.home-headline-1 {
+  margin: 0;
+  grid-area: 1/1/2/4;
+  align-self: center;
+}
+
+.home-title {
+  grid-area: 2/1/3/5;
+  align-self: start;
+  justify-self: center;
+}
+
+.home-paragraph-1 {
+  margin: 0;
+  margin-top: 0px;
+  grid-area: 3/1/4/5;
+}
+
+.home-img-1 {
+  margin-top: 40px;
+  grid-area: 1/5/4/8;
+  margin-bottom: 90px;
+}
+
+.home-headline-2a {
+  margin: 0;
+  justify-self: center;
+  grid-area: 4/4/5/7;
+}
+
+.home-headline-2b {
+  margin: 0;
+  justify-self: right;
+  grid-area: 5/5/6/8;
+}
+
+.home-paragraph-2 {
+  grid-area: 6/4/7/8;
+}
+
+.home-img-2 {
+  grid-area: 4/1/7/4;
+}
+
+/* Challenge Page Styles and Grid */
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 17px;
+}
+
+.challenge-headline-1 {
+  grid-area: 1/1/2/3;
+  text-align: right;
+  margin: 0;
+}
+
+.challenge-headline-1 span {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.challenge-title {
+  grid-area: 1/3/2/7;
+  justify-self: center;
+  align-self: center;
+}
+
+.challenge-img-1 {
+  grid-area: 2/1/3/8;
+  margin: 20px 0;
+}
+
+.challenge-paragraph-1 {
+  margin-top: 20px;
+  grid-area: 3/1/4/8;
+}
+
+.challenge-paragraph-2 {
+  grid-area: 4/1/5/4;
+  align-self: center;
+}
+
+/*Challenge Form Styles*/
+.challenge-form {
+  grid-area: 4/4/5/8;
+  background-color: #e7a932;
+  padding: 10px;
+  border: 3px solid #d64727;
+  margin: 0;
+}
+
+.challenge-form p {
+  color: #d64727;
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.challenge-form ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 7px;
+  padding: 0;
+  margin: 0 0 3px 0;
+}
+
+.challenge-form ul li {
+  display: flex;
+}
+
+.challenge-form li:nth-of-type(2) {
+  grid-area: 1/2/2/3;
+}
+
+.challenge-form li:nth-of-type(3) {
+  grid-area: 2/1/3/3;
+}
+
+#mail, #name {
+  width: 100%;
+}
+
+.challenge-form textarea {
+  width: 100%;
+  height: 90px;
+}
+
+.challenge-form button {
+  background-color: #d64727;
+  color: #faebd7;
+  padding: 0 10px;
+  border: 3px solid #d64727;
+  text-align: center;
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 1em;
+}
+
+.challenge-form button:hover {
+  background-color: #faebd7;
+  color: #d64727;
+}
+
+.challenge-headline-2 {
+  grid-area: 5/5/6/8;
+  margin: 40px 0 0 0;
+}
+
+.challenge-headline-2b {
+  grid-area: 6/5/7/8;
+  justify-self: right;
+  margin-top: 0;
+}
+
+.challenge-list {
+  grid-area: 7/5/8/8;
+}
+
+.challenge-img-2 {
+  grid-area: 6/1/8/5;
+}
+
+.challenge-img-1, .challenge-img-2 {
+  align-self: center;
+}
+
+/* About Me Styles and Grid */
+.about-headline-2, .about-headline-3, .about-headline-4 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.about-paragraph-1, .about-paragraph-2, .about-paragraph-3, .about-paragraph-4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-img-1, .about-img-2 {
+  align-self: center;
+  margin-top: 30px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 15px;
+} 
+
+.about-headline-1 {
+  grid-area: 1/1/2/4;
+  font-size: 3em;
+}
+
+.about-paragraph-1 {
+  grid-area: 2/1/3/4;
+}
+
+.about-headline-2 {
+  grid-area: 3/1/4/8;
+}
+
+.about-paragraph-2 {
+  grid-area: 4/1/5/8;
+}
+
+.about-img-1 {
+  grid-area: 1/4/3/8;
+}
+
+.about-headline-3 {
+  grid-area: 5/1/6/8;
+}
+
+.about-paragraph-3 {
+  grid-area: 6/1/7/8;
+}
+
+.about-headline-4 {
+  grid-area: 7/4/8/8;
+  align-self: center;
+}
+
+.about-paragraph-4 {
+  grid-area: 8/4/9/8;
+  
+}
+
+.about-img-2 {
+  grid-area: 7/1/9/4;
+}
+
+/* Media Queries */
+@media screen and (max-width: 864px) {
+  footer, .social {
+    display: block;
+  }
+  
+  .home-title, .challenge-title {
+    font-size: 15vmin
+  }
+  
+  .home-img-1, .home-img-2 {
+    align-self: center;
+  }
+  
+  .social img{
+    padding-right: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .challenge-grid {
+    display: block;
+  } 
+  
+  .challenge-headline-1 {
+    text-align: left;
+  }
+}
+  
+@media screen and (max-width: 550px) { 
+
+  .home-grid, .about-grid, nav ul, header {
+      display: block;
+  }
+
+  .logo-box img {
+    width: 90px;
+  }
+  
+  .home-title, .challenge-title {
+    font-size: 25vmin;
+  }
+  
+  .logo-box {
+    float: left;
+    margin-right: 50px;
+  } 
+  
+  nav a {
+    font-size: 5vmin;
+  }
+}
