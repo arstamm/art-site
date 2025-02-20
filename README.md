@@ -1,4 +1,4 @@
-# TEMPLATE FROM CSE 310
+# Medium
 
 ## Overview
 
